@@ -11,8 +11,8 @@ def blink(_pin):
 
 #SETUP
 print("Start")
-pin1.2 = [1, 2]
-pin3.4 = [3, 4]
+pin12 = [1, 2]
+pin34 = [3, 4]
 
 wiringpi.wiringPiSetup()
 wiringpi.pinMode(pin, 1)            # Set pin to mode 1 ( OUTPUT )
@@ -25,5 +25,6 @@ i = 1
 while i == 1:
     blink(pin1.2) 
     blink(pin3.4)
+
 #cleanup
 print("Done")
